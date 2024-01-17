@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First JavaScript Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalPath Navigator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="myButton">Click me!</button>
-    <p id="myMessage" style="display: none;">William is a DNG</p>
+<div id="app">
+    <!-- User Input Form -->
+    <form id="userForm">
+        <h2>Enter Your Goals</h2>
+        <input type="text" id="goal" placeholder="Your Goal">
+        <button type="submit">Submit</button>
+    </form>
 
-    <script src="script.js"></script>
+    <!-- Display Personalized Program -->
+    <div id="program"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
